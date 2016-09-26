@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <title>Online Dating </title>
+     <!-- *******************************************************************
+          *                                                                 *
+          *  FILE NAME: html5-template.html                                 *
+          *  FOLDER NAME(s): Dropbox/CompletedProjects/root                 *
+          *  AUTHOR: Robert Garba                                           *
+          *  DATE: 07-06-2016                                               *
+          *                                                                 *
+          *  DESCRIPTION:                                                   *
+          *  This is an dating site(module1 submittion of coursera project. *
+          *                                                                 *
+          ******************************************************************* -->
+   <link rel="stylesheet" href="css/screen.css">
+   <link rel="stylesheet" href="css/print.css" media="print">
+   <style>
+       body {
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;           
+       }
+
+       fieldset {
+           background-color: lightyellow;
+           border: 10px solid yellow;
+           margin-bottom: 10px;
+           width: 720px;
+       }
+       label {
+           width: 180px;
+           display: inline-block;
+           text-align: right;
+           vertical-align: top;         
+       }
+       #gender {
+           width: auto;
+       }
+       #rangetxt {
+           background: red;
+           text-align: center;           
+           width: 40px;
+           height: 27px;
+           margin-bottom: auto;
+       }
+       #rangetxt2 {
+           background: purple;
+           text-align: center;           
+           width: 40px;
+           height: 27px;
+       }
+       #address {
+           width: 360px;
+           height: 50px;           
+       }
+   </style>
+   </head>
+   <body>
+       <h2>Please Enter Your Details For Our Dating Website!</h2>
+       <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+       <div>
+           <fieldset>
+               <legend>Your Face</legend>
+               Your image:<input type="file" required> <br>
+               Image preview: <img src="" id="preview">
+           </fieldset>
+       </div>
+       <div>
+           <fieldset>
+                   <legend>Your General Details</legend>
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" name="name" placeholder="Your full names" required> <br>
+                   <label for="gender">Gender:</label> 
+                   <input type="radio" id="gender" name="gender" value="Male">Male        
+                   <input type="radio" id="gender" name="gender" value="Female">Female<br>
+                   <label for="age">Age:</label>
+                   <input type="number" min="18" max="99" step="1" id="age" placeholder="18" required> <br>
+                   <label for="birthday">Date of birth:</label>
+                   <input type="Date" id="birthday" name="birthday"> <br>
+                   <label for="color">Favorite color:</label>
+                   <input type="color" id="color" name="color"> <br>
+                   <label for="country">Which country:</label>
+               <select name="countries">
+                       <option value="nos">no selection</option>
+                       <option value="eng">Britain</option>
+                       <option value="ire">Ireland</option>
+                       <option value="itl">Italy</option>
+                       <option value="ger">Gemany</option>
+                       <option value="jpn">Japan</option>
+               </select>               
+           </fieldset>           
+       </div>
+       <div>
+           <fieldset>
+               <legend>Your Indicators</legend>
+               <label>Height:</label><label id="rangetxt">Short</label><input type="range" min="0" max="100" step="5" value="50" id="short"><label id="rangetxt2">Tall</label> <br>
+               <label>Salary:</label><label id="rangetxt">Poor</label><input type="range" min="0" max="100" step="5" value="50" id="short"><label id="rangetxt2">Rich</label>               
+           </fieldset>
+       </div>
+       <div>
+           <fieldset>
+               <legend>Your Contact Information</legend>
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" placeholder="smith@gmail.com" required> <br>
+               <label for="Mobile">Mobile:</label>
+               <input type="number" id="mobile" name="mobile" placeholder="083333333"> <br>
+               <label for="address">Address:</label>
+               <textarea id="address" name="address"></textarea> <br>
+               Method to contact you:
+               <input type="checkbox" id="contact" name="email" value="email">Email&nbsp; &nbsp;       
+               <input type="checkbox" id="contact" name="Whatsapp">Whatsapp&nbsp; &nbsp;       
+               <input type="checkbox" id="contact" name="In-App-Chat">In-App-Chat               
+           </fieldset> 
+               <input type="submit" value="Submit!">
+       </div>
+       </form>      
+   </body>
+ </html>
