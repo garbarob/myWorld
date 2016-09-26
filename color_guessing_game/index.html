@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <title>Javascript Color Guessing Game</title>
+     <!-- *******************************************************************
+          *                                                                 *
+          *  FILE NAME: html5-template.html                                 *
+          *  FOLDER NAME(s): Dropbox/CompletedProjects/root                 *
+          *  AUTHOR: Robert Garba                                           *
+          *  DATE: 09-06-2016                                               *
+          *                                                                 *
+          *  DESCRIPTION:                                                   *
+          *  This is an dating site(module1 submittion of coursera project. *
+          *                                                                 *
+          ******************************************************************* -->
+   <link rel="stylesheet" href="css/screen.css">
+   <link rel="stylesheet" href="css/print.css" media="print">
+   </head>
+   <body onload="do_game()">
+
+<!--
+       <div>
+           <h2>I am thinking of one of these colors:</h2>
+           <h5 id="colors"></h5>
+           <form>
+               <fieldset>
+               <legend>What color am I thinking of ?</legend>
+               <input type="text" id="guess"><br> <br>
+               <input type="button" value="OK" style="width:50px; margin-left:45px" onclick="check_guess()">
+               <input type="button" value="Cancel" style="width:60px">
+                
+                <div id="output">
+                    <input type="button" value="OK" style="width:50px; margin-left:45px" onclick="check_guess()">
+                </div>
+           </fieldset>  
+           </form>
+                    
+       </div>
+-->
+
+<!--   script src="scripts/java.js">-->
+    <script>
+    var color;
+    var guessColor;
+    var target_index;
+    var target;
+    var finished = false;
+    var guessNo = 0;
+    var myBody;
+
+    
+function do_game() {
+    var color = ["red", "white", "yellow"];
+    
+    while(!finished) {
+    guessColor = prompt("I am thinking of one of these colors: \n\n " + color + " \n\nWhat color am I thinking of?", "your color here");
+    
+    target_index = Math.floor((Math.random() * color.length) );
+        
+    target =  color[target_index];
+    console.log("random color is: " + target);
+    finished = check_guess();
+    guessNo++
+    }
+}
+
+function check_guess() {
+    
+    if (guessColor != target) {
+            alert("Sorry, I don't recognize your color. \n\n Please try again!");
+            return false;
+        }
+    if (guessColor > target) {
+            alert("Sorry, your guess is not correct! \n\n Hint: your color is alphabetically higher than mine. \n\n Please try again!");
+            return false;
+        }
+    if (guessColor < target) {
+            alert("Sorry, your guess is not correct! \n\n Hint: your color is alphabetically lower than mine. \n\n Please try again!");
+            return false;
+        }
+    else {
+//            alert("Congratulations! You have guessed the color! \n\n It took you " + guessNo + " guesses to finish the game! \n\n You can see the color in the background.");
+//            myBody=document.getElementsByTagName("body")[0];
+//            myBody.style.background=target;
+            return true;
+        }
+}
+    </script>    
+   </body>
+ </html>
