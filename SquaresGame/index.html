@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head class="no-js">
+    <meta charset="utf-8">
+    <title>Square Colour Game</title>
+    <!-- *******************************************************************
+         *                                                                 *
+         *  FILE NAME: index.htm                                           *
+         *  AUTHOR: Goncalo Pinto and Robert Garba                         *
+         *  DATE: 19/05/2016                                               *
+         *                                                                 *
+         *                                                                 *
+         * CHARS: http://www.w3schools.com/charsets/ref_html_utf8.asp      *
+         ******************************************************************* -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <p id="header">
+            <button id="btnQuit">Restart</button>
+            <span id="timer">00:00</span>
+            <i class="fa fa-question fa-1x" aria-hidden="true"> <span>Help</span></i>
+        </p>
+        <div id="boxContainer">
+            <div id="box1" class="box"><span></span></div>
+            <div id="box2" class="box"><span></span></div>
+            <div id="box3" class="box"><span></span></div>
+            <div id="box4" class="box"><span></span></div>
+        </div>
+        <p id="clickCountParagraph">Clicks: <span id="clickCount">0</span></p>
+    </div>
+    <div id="overlay"></div>
+    <div id="popUpBox" class="popup">
+        <h2 id="popupMessage"></h2>
+        <button id="btnPlayAgain" class="btnPopup">Play again</button>
+    </div>
+    <div id="helpBox" class="popup">
+        <p id="helpMessage"></p>
+        <button id="btnCloseHelp" class="btnPopup">Close</button>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
