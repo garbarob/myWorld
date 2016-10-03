@@ -61,7 +61,12 @@ function do_game() {
     console.log("random color is: " + target);
     
     while(!finished) {
-    guessColor = prompt("I am thinking of one of these colors: \n\n " + color + " \n\nWhat color am I thinking of? type your color here");   
+    guessColor = prompt("I am thinking of one of these colors: \n\n " + color + " \n\nWhat color am I thinking of? type your color here"); 
+		
+		if (guessColor === null) {
+        return; //break out of the function early
+    }
+	
     
 	//Hint: " + target + " ", "
 	
@@ -73,10 +78,13 @@ function do_game() {
 function check_guess() {
     
      var posArray = color.indexOf(guessColor);
+	 
+	 
     if(posArray == -1) {
         alert('Sorry I do not recognise your color. \n\n Please try again. \n\n');
         return false;
       }
+	  
     if (guessColor > target) {
             alert("Sorry, your guess is not correct! \n\n Hint: your color is alphabetically higher than mine. \n\n Please try again!");
             return false;
@@ -85,12 +93,16 @@ function check_guess() {
             alert("Sorry, your guess is not correct! \n\n Hint: your color is alphabetically lower than mine. \n\n Please try again!");
             return false;
         }
-    else {
+	
+	if (guessColor === target) {
            myBody=document.getElementsByTagName("body")[0];
             myBody.style.background=target;
-            alert("Congratulations! You have guessed the color! \n\n It took you " + guessNo + " guesses to finish the game! \n\n Click 'OK' see the color in the background." );
-            
+            alert("Congratulations! You have guessed the color! \n\n It took you " + guessNo + " guesses to finish the game! \n\n Click 'OK' see the color in the background." );            
             return true;
+		}
+	
+    else {
+			 return false;
         }
 }
     </script>    
