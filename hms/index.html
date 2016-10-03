@@ -1,0 +1,200 @@
+<!--
+ <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+ 
+ <jsp:include page="header.jsp" /> 
+ <jsp:include page="defaultMenu.jsp" /> 
+    
+-->
+    
+            <!DOCTYPE html>
+         <html lang="en">
+             <head>
+                 <meta charset="utf-8">
+                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                 <meta name="viewport" content="width=device-width, initial-scale=1">
+                 <link href="css/bootstrap.min.css" rel="stylesheet">
+                 <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+                 <link href="css/font-awesome.min.css" rel="stylesheet">
+                 <link href="css/bootstrap-social.css" rel="stylesheet">
+                 <link href="css/mystyles.css" rel="stylesheet" >
+                 <title>Hospital Management Website</title>
+
+           </head>
+           <body>
+               <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                   <div class="container">
+                       <div class="navbar-header">
+                           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                               <span class="sr-only">Toggle navigation</span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                           </button>
+                           <a class="navbar-brand" href="index.html">Hospital Management Application</a>
+                       </div>
+                       
+
+                       <div id="navbar" class="navbar-collapse collapse nav navbar-right">
+                           <ul class="nav navbar-nav">
+                            <li><a href="index.html"><span class="glyphicon glyphicon-home"
+                                 aria-hidden="true"></span>Home</a></li>
+                            <li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign"></span>About</a></li>                
+                               <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
+                               <li class="active"><a href="superuser.html"><span class="glyphicon glyphicon-user"></span>Login</a></li>
+                               <li class="active"><a href="superuser.html"><span class="glyphicon glyphicon-user"></span>Log-Out</a></li>
+                           </ul>
+                       </div>
+                       </div>
+                   </nav>
+               
+               <header class="jumbotron">
+                   <div class="container">
+                    <div class="row row-header">
+                        <div class="col-xs-12 col-sm-8">
+                            <h1>Finglas Hospital Board</h1>
+                            <p style="padding:40px;"></p>
+                            <p>When it comes to choosing a hospital, one thing is clear: quality counts. And a century-long tradition of providing medical care in a comfortable and convenient environment means peace of mind for the thousands of patients who are cared for by the doctors and nurses at The Finglas Hospital each year.</p>
+                        </div>
+                        
+                            <div class="col-xs-12 col-sm-4">
+                    <p style="padding:20px"></p>
+                    <img src="img/logo.png" class="img-responsive">
+                </div>
+                        
+                    </div>
+                </div>
+            </header>
+               <div class="container">
+               <ol class="breadcrumb">
+                    <li class="active">Home</li>
+                   <li><a href="signup.html">About</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ol>
+            </div>
+
+            <div class="container">
+                <div class="row row-content">
+                    
+                    <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                        <p style="padding:20px;"></p>
+                        <h3 align=center>Your health is our concern</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+                        <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         src="img/logo1.jpg" alt="ourbuilding">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading"><span class="label label-primary">Welcome to Finglas Hospital</span><span class="badge">Dublin</span></h2>                        
+                        <p>
+
+Our aim is to deliver the highest quality of care to our patients, excellent training to our students and a friendly, stimulating and professional environment for staff.
+
+The information on this site is organised to meet the needs of different types of users. All suggestions for improvement are gratefully received.</p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                </div>
+
+                </div>
+                </div>
+
+
+                <div class="row row-content">
+                    <div class="col-xs-12 col-sm-3">
+                        <p style="padding:20px;"></p>
+                        <h3 align=center>This Month's Promotions</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-9">
+                        <h2>Meet our staffs</h2>
+                        <p>Upon arrival in a ward, a nurse will help to settle you in and a doctor will work with you to complete your medical history.</p>
+                        <p><a href="#">More &raquo;</a></p>
+                    </div>
+                </div>
+
+                <div class="row row-content">
+                    <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                        <p style="padding:20px;"></p>
+                        <h3 align=center>Meet our Culinary Specialists</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+                        <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">Your Stay in Our Wards</h2>
+                        <h4>Your Healthcare Team</h4>
+                        <p>Upon arrival in a ward, a nurse will help to settle you in and a doctor will work with you to complete your medical history. You will also receive an information leaflet that contains information about your care in your specific ward. You should feel comfortable asking your doctor or nurse about your condition.
+                         </p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+                </div>
+               </div>
+               
+               
+            <footer class="row row-footer">
+                <div class="container">
+                    <div>             
+                        <div class="col-xs-5 col-xs-offset-1 col-sm-2  col-sm-offset-1">
+                            <h5>Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>                    
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li class="active">Login</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6 col-sm-5">
+                            <h5>Our Address</h5>
+                            <address>
+                              121, Poppintree Road<br>
+                              Jamestown Road, Finglas<br>
+                              Dublin 11<br>
+                              <i class="fa fa-phone"></i>: +353 1 814 0250<br>
+                              <i class="fa fa-fax"></i>: +353 1 834 6336<br>
+                              <i class="fa fa-envelope"></i>:
+                                <a href="mailto:softwaredeveloper@ftc.ie">softwaredeveloper@ftc.ie</a>
+                           </address>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="nav navbar-nav" style="padding: 40px 10px;">
+                                <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                                <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <p style="padding:10px;"></p>
+                            <p align=center>© Copyright 2016 Finglas Hospital Management Board</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script
+                src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+            </script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
+               
+        </body>
+
+        </html>
+
+<!-- <jsp:include page="footer.jsp" /> -->
