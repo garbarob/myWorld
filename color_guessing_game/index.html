@@ -61,8 +61,10 @@ function do_game() {
     console.log("random color is: " + target);
     
     while(!finished) {
-    guessColor = prompt("I am thinking of one of these colors: \n\n " + color + " \n\nWhat color am I thinking of? Hint: " + target + " ", "your color here");   
+    guessColor = prompt("I am thinking of one of these colors: \n\n " + color + " \n\nWhat color am I thinking of? type your color here");   
     
+	//Hint: " + target + " ", "
+	
     guessNo++
     finished = check_guess();
     
