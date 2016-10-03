@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <title>Online Order Form</title>
+	<!-- *******************************************************************
+          *                                                                 *
+          *  FILE NAME: html5-template.html                                 *
+          *  FOLDER NAME(s): Dropbox/10-gitProjects/root                    *
+          *  AUTHOR: Robert Garba                                           *
+          *  DATE: 17-05-2016                                               *
+          *                                                                 *
+          *  DESCRIPTION:                                                   *
+          *  HTML5 code template that we will use for future exercises.     *
+          *                                                                 *
+          ******************************************************************* -->
+	<link rel="stylesheet" href="css/screen.css">
+   <link rel="stylesheet" href="css/print.css" media="print">
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script src="scripts/practice.js" type="text/javascript"></script>
+    
+    <script>
+        //alert("hello");
+        function myFunction() {
+            document.getElementById("details").submit();
+            
+        }
+</script>
+</head>
+<body>
+    <div class="main">            
+        <div class="header">
+            <ul style="list-style-type:none">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>           
+        </div>    
+        <fieldset>           
+            <legend><h2>Online Order Form</h2></legend>
+            <p>Enter a number in the Quantity Column and hit tab </p>        
+    
+<!--    Create a new file called ‘TableCalculateTotal.html’ in a folder. We will need a simple HTML Table to get started. Our table has an id attribute of tblProducts and a thead , tbody and tfoot to go with it.-->
+    
+    <div>
+        <table id="tblProducts">
+    <thead>
+        
+<!--    The Table has 4 columns – Product, Quantity, Price and Sub-Total. It is assumed here that the Product and the Price info will be prepopulated (in your case probably from a database). When the user enters the Quantity, the Sub-Total is automatically calculated using Price x Quantity. The <tfoot> contains a row representing a GrandTotal which is the sum of all the cells in the Sub-Total column.-->
+        
+        <tr>
+        <td>Product</td>
+        <td>Quantity</td>
+        <td>Price</td>
+        <td>Sub-Total</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td><input type="text" class="pnm" value="Honey Houseblend" name="pnm" /></td>
+        <td><input onkeydown="this.value=this.value.replace(/\D/,'')" onkeyup="this.value=this.value.replace(/\D/,'')" type="text" class="qty" value="" name="qty"/></td>
+        <td><input type="text" class="price" value="4.50" name="price"/></td>
+        <td><input type="text" class="subtot" value="0" name="subtot"/></td>
+        </tr>
+        <tr>
+        <td><input type="text" class="pnm" value="Clover Honey" name="pnm" /></td>
+        <td><input onkeyup="this.value=this.value.replace(/\D/,'')" onkeydown="this.value=this.value.replace(/\D/,'')"
+                   type="text" class="qty" value="" name="qty"/></td>
+        <td><input type="text" class="price" value="8.65" name="price"/></td>
+        <td><input type="text" class="subtot" value="0" name="subtot"/></td>
+        </tr>
+        <tr>
+        <td><input type="text" class="pnm" value="Orange Blossom Honey" name="pnm" /></td>
+        <td><input onkeyup="this.value=this.value.replace(/\D/,'')" onkeydown="this.value=this.value.replace(/\D/,'')" type="text" class="qty" value="" name="qty"/></td>
+        <td><input type="text" class="price" value="7.50" name="price"/></td>
+        <td><input type="text" class="subtot" value="0" name="subtot"/></td>
+        </tr>
+        <tr>
+        <td><input type="text" class="pnm" value="Wild Flower" name="pnm" /></td>
+        <td><input onkeyup="this.value=this.value.replace(/\D/,'')" onkeydown="this.value=this.value.replace(/\D/,'')" type="text" class="qty" value="" name="qty"/></td>
+        <td><input type="text" class="price" value="7.95" name="price"/></td>
+        <td><input type="text" class="subtot" value="0" name="subtot"/></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+        <td colspan="3" style="text-align: right" ><b>Grand Total &euro;</b></td>
+        <td><input style="font-weight: bold" type="text" class="grdtot" value="0" name="grdtot"/></td>
+        </tr>
+    </tfoot>
+    </table>
+    </div>
+            <fieldset>
+                <legend><h2>Customer Details</h2></legend>
+                    <form id="details" action="form_action.asp">
+                    <div id="nameDiv">
+                    <label>First Name:</label>
+                    <input type="text" id="firstname" > <br>
+                    <label>Last Name:</label>
+                    <input type="text" id="lastname" > <br>
+                    <label>Email Address:</label>
+                    <input type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required /> <br />
+                    </div>
+                    <div id="addDiv">
+                    <label>Delivery Address:</label><br>
+                    <textarea id="delAddressBox" style="height:155px " rows="4"></textarea>
+                    </div>                    
+                    </form>
+                </fieldset>
+                     <input type="button" name="reset_form" value="Reset Form" onclick="reset();">
+                    <input type="button" onlick="myFunction(); "value="Submit Now!">                
+            </fieldset>            
+    
+<!--    Let’s now see the script which will calculate the Sub-Total column values. We will also sum all of the values in the Sub-Total column, and display the result in the table footer.-->
+    
+    <div id="footer">
+        &copy; 2016 Robert Garba
+    </div>
+   </div>       
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    background-color: silver;
+    max-width: 95%;
+    width: 80%;
+    margin: 0 auto;
+}
+thead {
+    font-weight: bold;
+    color: dimgray;
+}
+.header {
+    color: solid black;
+/*    width: auto;*/
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+li:hover { 
+    text-decoration: underline;
+    font-size: 120%;
+}
+table {
+    overflow-x: auto;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;    
+}
+
+#footer {
+    margin-top: 200px;
+    text-align: center;
+}
+div, input[type=text], [type=email] {
+    width: 100%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=button] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+#nameDiv {
+    width: 50%;
+    float: left;
+}
+#addDiv {
+    width: 50%;
+    }
+
+#delAddressBox {
+    width: 100%;   
+}
