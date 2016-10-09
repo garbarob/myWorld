@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(215,215,215);
+    width:1100px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+#dateOfBirth {
+    text-align: center;    
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20%;
+}
+#outputDiv {
+    background-color: black;
+    height: 50px;    
+    padding: 30px;
+    text-align: center;    
+    margin: 0 auto;
+    color: white;
+    width: 40%;
+}
+footer {
+    text-align: center;
+    margin-top: 150px;
+}
+
+

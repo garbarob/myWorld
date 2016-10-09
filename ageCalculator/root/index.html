@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <title>Age in minutes calculator</title>
+<!--      *******************************************************************
+          *                                                                 *
+          *  FILE NAME: html5-template.html                                 *
+          *  FOLDER NAME(s): Dropbox/10-gitProjects/root                    *
+          *  AUTHOR: Robert Garba                                           *
+          *  DATE: 16-05-2016                                               *
+          *                                                                 *
+          *  DESCRIPTION:                                                   *
+          *  HTML5 code template that we will use for future exercises.     *
+          *                                                                 *
+          *******************************************************************          	
+-->
+    	
+  <link rel="stylesheet" href="css/screen.css">
+   <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="scripts/practice.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>$(function() {
+    $( "#age" ).datepicker();
+  });
+</script>       
+</head>
+<body>
+    <header>
+        <h2>Age in Minutes Calculator</h2>
+    </header>
+    <form action = "">
+    <fieldset id="dateOfBirth">
+        <legend style="text-align: center">Select Date of Birth</legend>
+        <input type="date" id="age" style="text-align: center";>
+        <input type="button" id="submit" onclick="calculateMyAge();" value="Let's do this"/>
+    </fieldset>
+    </form>
+    <legend id="outputDiv">
+        <div>
+            <p><output type="label" id="result" /></p>
+        </div>
+    </legend>
+    <footer>
+        <p>&copy; 2016 Robert Garba</p>
+    </footer>
+</body>
+</html>
