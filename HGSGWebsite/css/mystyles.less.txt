@@ -1,0 +1,121 @@
+//Add the following Less variables into the file:
+@white: #ffffff;
+@off-white: #eeeeee;
+@lt-gray: #dddddd;
+@indigo: #303f9f;
+@dark-indigo: #1a237e;
+@light-indigo: #7986CB;
+// Height variables
+@carousel-height: 300px;
+
+//add mixing into the file as follows:
+.zero-margin (@pad-up-dn: 0px, @pad-left-right: 0px) {
+	margin:0px auto;
+	padding: @pad-up-dn @pad-left-right;
+}
+
+//Using the Mixin class that we defined earlier, add the following row classes to the file:
+//Note the use of the mixin with various parameters in defining the classes.
+.row-header {
+	.zero-margin();
+}
+.row-content {
+	.zero-margin (50px, 0px);
+	border-bottom: 1px ridge;
+	min-height:400px;
+}
+.row-footer {
+	.zero-margin(20px, 0px);
+	background-color: #AfAfAf;
+}
+.jumbotron {
+	.zero-margin(70px, 30px);
+	background:@light-indigo;
+	color:floralwhite;
+}
+
+//Next we add a carousel class to illustrate the use of nesting of classes in Less, as follows:
+.carousel {
+	background:@dark-indigo;
+	.item {
+		height: @carousel-height;
+		img {
+			left: 0;
+			min-height: @carousel-height;
+			position: absolute;
+			top: 0;
+		}
+	}
+}
+
+//Add another group of nesting classes with the navbar-inverse class as follows:
+.navbar-inverse {
+	background: @indigo;
+	color:@white;
+	.navbar-nav>.active>a {
+		background: @dark-indigo;
+		color: @white;
+		&:hover {
+			background: @dark-indigo;
+			color: @white;
+		}
+		&:focus {
+			background: @dark-indigo;
+			color: @white;
+		}
+	}
+	.navbar-nav>.open>a {
+		background: @dark-indigo;
+		color: @white;
+		&:hover {
+			background: @dark-indigo;
+			color: @white;
+		}
+		&:focus {
+			background: @dark-indigo;
+			color: @white;
+		}
+	}
+	.navbar-nav {
+		.open {
+			.dropdown-menu>li>a {
+				background-color: @indigo;
+				color:@off-white;
+				&:hover {
+					color:#000000;
+				}
+			}
+			.dropdown-menu {
+				background-color: @indigo;
+				color:@off-white;
+			}
+		}
+	}
+}
+
+//Finally we add in those CSS classes which do not fall into any of the above categories. These still use the Less variables, but do not use nesting or mixins:
+address {
+	color:#0f0f0f;
+	font-size:80%;
+	margin:0px;
+}
+body {
+	align:center;
+	padding:50px 0px 0px 0px;
+	z-index:0;
+}
+.tab-content {
+	border-bottom: 1px solid @lt-gray;
+	border-left: 1px solid @lt-gray;
+	border-right: 1px solid @lt-gray;
+	padding: 10px;
+}
+.affix {
+	top:100px;
+}
+#carouselButtons {
+	bottom: 0px;
+	position: absolute;
+	right:0px;
+}
+

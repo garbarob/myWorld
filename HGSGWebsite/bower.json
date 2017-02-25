@@ -1,0 +1,23 @@
+{
+  "name": "conFussion",
+  "description": "webProject",
+  "main": "index.html",
+  "keywords": [
+    "conFussion",
+    "Fussion",
+    "Restuarant"
+  ],
+  "authors": [
+    "Robert Garba"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

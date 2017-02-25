@@ -1,0 +1,355 @@
+body {
+  font-size: 16px;
+  line-height: 1.5em;
+  background: url(../../../../../../../../../../../sites/all/themes/abwelding/css/img/bg.html) center top no-repeat fixed;
+  background-color: #CCCCCC;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 24px;
+  font-weight: bold;
+  color: #00a2e8;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+h2 {
+  font-size: 1.375em;
+  line-height: 1.0909em;
+}
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+h4 {
+  font-size: 1.125em;
+  line-height: 1.333em;
+}
+h5,
+h6 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+p {
+  margin-bottom: 24px;
+}
+a,
+a:link,
+a:visited {
+  color: #00a2e8;
+  text-decoration: none;
+}
+#page {
+  width: 1000px;
+  margin: 0 auto;
+  background: url(../../../../../../../../../../../sites/all/themes/abwelding/css/img/trans.html);
+}
+.zone {
+  background: #00a2e8;
+}
+#zone-branding-wrapper {
+  margin-bottom: 2em;
+}
+#region-branding .logo-img {
+  margin-right: 0;
+  margin-left: -10px;
+  border: 2px solid #00a2e8;
+  border-top: none;
+  overflow: hidden;
+  width: 956px;
+}
+#zone-header {
+  padding-top: 10px;
+}
+#zone-header #region-menu {
+  background: #00a2e8 url(../../../../../../../../../../../sites/all/themes/abwelding/css/img/nav.html) bottom left repeat-x;
+  height: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 60px;
+}
+#zone-header #region-menu #block-superfish-1 li a {
+  display: block;
+  float: left;
+  padding: 0 1em;
+  line-height: 60px;
+}
+#zone-header #region-menu #block-superfish-1 li a,
+#zone-header #region-menu #block-superfish-1 li a:link,
+#zone-header #region-menu #block-superfish-1 li a:visited {
+  color: #FFF;
+}
+#zone-header #region-menu #block-superfish-1 li a:hover,
+#zone-header #region-menu #block-superfish-1 li a:focus,
+#zone-header #region-menu #block-superfish-1 li a:active {
+  background: url(../../../../../../../../../../../sites/all/themes/abwelding/css/img/nav_hover.html) top left repeat-x;
+}
+#zone-header #region-menu #block-superfish-1 li ul {
+  background: #00a2e8;
+  margin-top: 22px;
+  margin-left: 0px;
+  padding-left: 0;
+  text-transform: none;
+  width: 200px !important;
+}
+#zone-header #region-menu #block-superfish-1 li ul li {
+  border-bottom: 2px solid blue;
+  margin-left: 0;
+}
+#zone-header #region-menu #block-superfish-1 li ul li.last {
+  border: none;
+}
+#zone-header #region-menu #block-superfish-1 li ul li a {
+  line-height: 1.25em;
+  padding: .5em 10px;
+  margin-left: 0;
+}
+#zone-header #region-menu #block-superfish-1 li ul li a:hover,
+#zone-header #region-menu #block-superfish-1 li ul li a:focus,
+#zone-header #region-menu #block-superfish-1 li ul li a:active {
+  background: none;
+  color: #FFF;
+  color: rgba(255,255,255,0.8);
+}
+#zone-header .field-slideshow-controls {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  height: 100%;
+  overflow: hidden;
+}
+#zone-header .field-slideshow-controls a {
+  display: block;
+  height: 320px;
+  margin-top: -20px;
+  color: #000;
+  opacity: .3;
+  background-repeat: no-repeat;
+}
+#zone-header .field-slideshow-controls a:hover {
+  background-color: #000;
+  opacity: .5;
+}
+#zone-header .field-slideshow-controls a.prev {
+  float: left;
+  padding-right: 8%;
+  background-image: url(../../../../../../../../../../../sites/all/themes/abwelding/css/img/arr_left.html);
+  background-position: 25% 50%;
+}
+#zone-header .field-slideshow-controls a.next {
+  float: right;
+  padding-left: 8%;
+  background-image: url(../../../../../../../../../../../sites/all/themes/abwelding/css/img/arr_right.html);
+  background-position: 75% 50%;
+}
+#region-content {
+  background: #FFF;
+  margin-right: -10px;
+  width: 680px;
+  padding: 20px;
+}
+#region-sidebar-first {
+  background: #FFF url(../../../../../../../../../../../sites/all/themes/abwelding/css/img/grad_grey.html) top left repeat-x;
+  padding: 20px 0;
+}
+#region-footer-first .menu {
+  font-size: 90%;
+  padding: 1em 0;
+  float: left;
+}
+#region-footer-first .menu li {
+  float: left;
+  list-style: none;
+  padding: 0 .5em;
+  margin: 0;
+  line-height: 1em;
+  border-right: 1px solid #FFF;
+}
+#region-footer-first .menu li.last {
+  border: none;
+}
+#region-footer-first .menu li a,
+#region-footer-first .menu li a:link,
+#region-footer-first .menu li a:visited {
+  color: #FFF;
+  opacity: .8;
+}
+#region-footer-first .menu li a:hover,
+#region-footer-first .menu li a:focus,
+#region-footer-first .menu li a:active {
+  opacity: .6;
+}
+#region-footer-first .menu li ul {
+  display: none;
+}
+#region-footer-second {
+  height: 0;
+  left: 0;
+  position: relative;
+  font-size: 90%;
+}
+#region-footer-second ul {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: -2.5em;
+}
+#region-footer-second ul li,
+#region-footer-second ul li.leaf {
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none;
+}
+#region-footer-second ul a,
+#region-footer-second ul a:link,
+#region-footer-second ul a:visited {
+  color: #DDD;
+}
+.node-project .group-left {
+  position: relative;
+  counter-reset: images -1;
+}
+.node-project .group-left .field-item:after {
+  counter-increment: images 1;
+  content: counter(images,decimal) " images";
+  position: absolute;
+  opacity: 0;
+}
+.node-project .group-left a.colorbox {
+  position: absolute;
+  width: 220px;
+  height: 150px;
+  overflow: hidden;
+  border: 3px solid #FFF;
+}
+.node-project .group-left a.colorbox:hover {
+  border: 3px solid #666;
+}
+.node-project .group-right {
+  margin-left: 240px;
+  width: 420px;
+}
+.node-project:hover .field-name-node-link {
+  opacity: .8;
+  margin-left: 10px;
+}
+.node-project:hover .field-name-node-link .field-item:after {
+  right: 9px;
+}
+.node-project .field-name-node-link {
+  width: 40px;
+  height: 150px;
+  margin: 0 1px;
+  background: url(../../../../../../../../../../../sites/all/themes/abwelding/css/img/arr_right.html) right 50% no-repeat;
+  position: absolute;
+  bottom: -151px;
+  left: 180px;
+  opacity: .5;
+}
+.node-project .field-name-node-link a {
+  display: none;
+}
+.node-project .field-name-node-link .field-item:after {
+  opacity: 1;
+  right: 0;
+  background: #FFF;
+  bottom: 0;
+  padding-right: 5px;
+  right: 0;
+  text-align: right;
+  width: 215px;
+}
+.node-project .field-name-field-client {
+  font-weight: bold;
+}
+.node-project .field-name-field-testimonial {
+  background: url(../../../../../../../../../../../sites/all/themes/abwelding/css/img/quotes.html) top left no-repeat;
+  margin-top: -1em;
+  padding: 20px 0 0 10px;
+}
+.node-project .field-name-field-testimonial .field-items {
+  border: 1px dotted #999;
+  padding: 10px 10px 10px 15px;
+}
+.view-projects .views-row {
+  min-height: 150px;
+  padding: 12px 0;
+}
+.view-projects .views-row.views-row-even {
+  background: #EEE;
+  border-left: 10px solid #EEE;
+}
+.view-projects .views-row.views-row-odd {
+  background: #DDD;
+  border-left: 10px solid #DDD;
+}
+#block-block-2 {
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+#block-block-2 strong {
+  font-size: 1em;
+}
+#block-block-2 .block-title {
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+#block-views-clients-block {
+  padding: 5px;
+  background: #FFF;
+  border-bottom: 2px solid #00a2e8;
+  margin-top: -20px;
+  padding-top: 20px;
+  margin-bottom: 1em;
+}
+#block-views-clients-block table {
+  border: 0;
+}
+#block-views-clients-block tr:hover {
+  background: none;
+}
+#block-views-clients-block td {
+  padding: 3px 0;
+}
+#block-views-clients-block .block-title {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #00a2e8;
+}
+body.page-node-19 a.colorbox {
+  display: block;
+  float: left;
+  margin-bottom: 1em;
+  border: 1px solid #DDD;
+}
+#block-block-3 {
+  float: right;
+  font-size: 90%;
+  text-align: right;
+}
+#block-block-3 iframe {
+  border: 1px solid #DDD;
+}
+#block-block-3 p {
+  margin: -30px 0 0 0;
+}
+body.page-node-20 dt {
+  float: left;
+  font-size: 1em;
+  width: 7em;
+  position: absolute;
+}
+body.page-node-20 dd {
+  font-style: normal;
+  font-size: 1em;
+  margin-bottom: 0;
+  margin-left: 7em;
+}
